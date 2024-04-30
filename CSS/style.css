@@ -1,0 +1,148 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply earth tone colors */
+body {
+    background-color: #f0eada; /* Light beige */
+    color: #4a4a4a; /* Dark gray */
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    position: relative; /* Needed for footer positioning */
+    font-family: "abril-titling-narrow", serif; /* Default font family */
+    font-weight: 400; /* Default font weight */
+    font-style: normal; /* Default font style */
+}
+
+/* Center all text */
+body, header, nav, main, footer {
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #4c774e;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: "abril-titling", serif; /* Use Abril Titling font family */
+    font-weight: 700; /* Use Bold font weight */
+    font-style: italic;
+    color: #ffffff; /* White */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #c8a986; /* Light brown */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Display list items side by side */
+    justify-content: center; /* Center align the list items */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a; /* Dark gray */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #4c774e; /* Earthy green on hover */
+}
+
+main {
+  padding: 20px;
+  font-size: 120%;
+}
+
+/* Main content styles */
+.index {
+    padding: 20px;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+main h2{
+  color: #4c774e;
+  text-decoration: underline;
+}
+
+.preprocessing {
+    margin-top: 10px;
+    line-height: 200%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumb {
+            margin: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+.cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #4CAF50, #2E8B57); /* Adjusted gradient color */
+            color: #fff;
+            border-radius: 20px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s;
+        }
+
+.cta-button:hover {
+            background: linear-gradient(to right, #2E8B57, #4CAF50); /* Adjusted hover gradient color */
+            color: #fff;
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* Styles for tablets */
+            .cta-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            /* Styles for phones */
+            .cta-button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+
+
+/* Footer styles */
+footer {
+    background-color: #8b735b; /* Brownish */
+    color: #ffffff; /* White */
+    padding: 10px;
+    position: absolute; /* Position the footer absolutely */
+    bottom: 0; /* Pin the footer to the bottom of the page */
+    width: 100%; /* Make footer width 100% of the viewport */
+}
+
+/* Subheading styles */
+h2 {
+    font-family: "abril-titling-narrow", serif; /* Use Abril Titling Narrow font family */
+    font-weight: 700; /* Use Bold font weight */
+}
+
+/* Other text styles */
+p, ul, li {
+    font-family: "abril-titling-narrow", serif; /* Use Abril Titling Narrow font family */
+    font-weight: 700; /* Use Bold font weight */
+}
