@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative; /* Set position to fixed */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Make the footer span the full width of the viewport */
+    text-align: center; /* Center the content horizontally */
+}
+
+#datetime {
+    display: inline-block; /* Ensure the element respects text-align */
+    margin: 20px; /* Add some margin for spacing */
+}
+
+
+/* Set full background color */
+body {
+    background-color: #F2A30F;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #F2A30F; /* Full background color */
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Center align the links */
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 40px; /* Increase spacing between items */
+}
+
+a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-family: rafaella, sans-serif;
+    font-weight: 700;
+    font-style: normal; /* Use specified font */
+    font-size: 24px; /* Font size */
+    transition: .5s color;
+}
+
+a:hover {
+    color: #8D44F2; /* Prominent accent color on hover */
+}
+
+/* Style the container */
+.container {
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center align content */
+}
+
+.container h1 {
+  font-family: "abril-titling-narrow", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+/* Style the h2 headings */
+.container h2 {
+    color: #ffffff; /* Prominent accent color */
+    font-family: "rafaella", sans-serif; /* Use specified font */
+    font-size: 28px; /* Font size */
+    margin-bottom: 10px; /* Add space below each heading */
+}
+
+/* Style the image placeholders */
+.container img {
+    display: block; /* Center align images */
+    border: 5px solid #0396A6;
+    margin: 0 auto 20px; /* Center align images and add space below each image */
+    width: 50%;
+}
+
+p {
+    font-family: "abril-titling-narrow", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.potluck {
+  display: inline-block;
+  width: 100%;
+  padding: 20px; /* Add padding */
+  text-align: center; /* Center align content */
+  justify-content: center;
+}
+
+.potluck img{
+  border: 2px solid white;
+  margin: 3.5vw;
+  width: 40%;
+  max-width: 500px;
+}
+
+.divider {
+    width: 100%; /* Set width to span the entire screen */
+    height: 1px; /* Set height to create a line */
+    background-color: white; /* Set background color to white */
+    margin-top: 20px; /* Add some spacing between the divider and the footer */
+}
+
+p span{
+  font-family: "abril-titling-narrow", serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: White;
+}

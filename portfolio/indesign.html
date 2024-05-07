@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://use.typekit.net/gft7idd.css"> <!-- Link to Typekit font -->
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./project4.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="visual.html">Visual Design</a></li>
+        </ul>
+    </nav>
+
+
+      <div class="potluck">
+        <img src="pix/potluck.jpg" alt="magazine cover">
+        <img src="pix/potluck2.jpg" alt="magazine cover">
+        <img src="pix/potluck3.jpg" alt="magazine cover">
+        <img src="pix/potluck4.jpg" alt="magazine cover">
+      </div>
+
+
+
+    <footer>
+          <div class="divider"></div>
+        <p><span id="datetime"></span></p> <!-- JavaScript will update this -->
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const navbar = document.querySelector("nav");
+          const datetime = document.getElementById("datetime")
+          setInterval(function() {
+        const now = new Date(); // Get the current date and time
+        const dateString = now.toLocaleDateString(); // Format the date string
+        const timeString = now.toLocaleTimeString(); // Format the time string
+        datetime.textContent = `${dateString} ${timeString}`; // Update the datetime element
+    }, 1000); // Update every second
+
+      });</script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://use.typekit.net/gft7idd.css"> <!-- Link to Typekit font -->
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../project4.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="visual.html">Visual Design</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Brainbox</h2>
+      <img src="pix/dabrain.png" alt="brainbox logo">
+      <p>Brainbox is a project from a childhood friend of mine, and this is a logo that I designed for him, it is a game development project so i tried to make the color scheme fun and poppy.</p>
+      <br><br>
+      <h2>Lucki</h2>
+      <img src="pix/lucki.png" alt="jo saza lucki mascot">
+      <p>Jo Saza is a musician who I met during my time in college, and he asked me to mock-up a mickey mouse style mascot for him.</p>
+    </div>
+
+
+
+    <footer>
+          <div class="divider"></div>
+        <p><span id="datetime"></span></p> <!-- JavaScript will update this -->
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const navbar = document.querySelector("nav");
+          const datetime = document.getElementById("datetime")
+          setInterval(function() {
+        const now = new Date(); // Get the current date and time
+        const dateString = now.toLocaleDateString(); // Format the date string
+        const timeString = now.toLocaleTimeString(); // Format the time string
+        datetime.textContent = `${dateString} ${timeString}`; // Update the datetime element
+    }, 1000); // Update every second
+
+      });</script> <!-- Link to your JavaScript file -->
+</body>
+</html>

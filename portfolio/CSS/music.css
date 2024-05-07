@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../pix/Tabula Rasa.png'); /* Background image URL */
+    background-size: cover;
+    font-family: "abril-titling-narrow", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.navbar {
+    text-align: center;
+    padding: 30px; /* Add padding */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: lightblue;
+    transition: .5s;
+}
+
+
+
+.container {
+    text-align: center;
+    margin-top: 100px; /* Add space from the top */
+}
+
+.tabula-rasa {
+    font-size: 120px;
+    margin-bottom: -10px;
+    animation: color-change 7s infinite;
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  25% { color: #e9ac30; }
+  50% { color: #3e97d7; }
+  75% { color: #bcc73e; }
+  100% { color: white; }
+}
+
+.tabula-rasa-sub {
+    font-size: 30px;
+}
+
+.tabula-rasa-sub a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5vh;
+
+}
+
+.flex-box img {
+    width: 50px; /* Adjust image size */
+    margin: 0 10px; /* Add spacing between images */
+}
+
+.flex-box a {
+    margin: 0 10px; /* Add spacing between text and images */
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    transition: .5s color;
+}
+
+a {
+  transition: .5s color;
+}
+
+a:hover {
+    color: lightblue;
+    transition: .5s;
+}

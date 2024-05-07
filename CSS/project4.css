@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff7f00; /* Bright vibrant orange */
+    font-family: "rafaella", sans-serif; /* Apply font to entire document */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#cameronName {
+    opacity: 0; /* Initially hide */
+    font-family: "rafaella", sans-serif;
+    font-variation-settings: "wght" 600;
+    color: white;
+    font-size: 90px !important;
+    text-decoration: underline;
+    transition: opacity 1s; /* Apply transition */
+    margin-top: 35vh;
+    margin-bottom: 2vh;
+}
+
+h1 {
+    font-family: "rafaella", sans-serif;
+    font-variation-settings: "wght" 600;
+    color: white;
+    font-size: 9vw;
+    text-align: center;
+    opacity: 1; /* Set initial opacity to 1 */
+    transform: translateY(0); /* Set initial position */
+    transition: opacity 1s, transform 1s; /* Apply transition */
+    margin-top: 40vh;
+    margin-bottom: 2vh;
+}
+
+
+nav {
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateY(-100px); /* Set initial position above */
+    transition: opacity 1s, transform 1s; /* Apply transition */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "rafaella", sans-serif;
+    font-variation-settings: "wght" 600;
+    font-size: 70px;
+    max-width: 20%;
+    transition: .5s color;
+}
+
+nav ul li a:hover {
+    color: #4caf50; /* Leaf green */
+    transition: .5s;
+}
+
+.dropdown {
+    position: relative;
+    transition: .5s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+    transition: .5s
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: .5s;
+}
